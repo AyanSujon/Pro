@@ -1,0 +1,266 @@
+
+/* // X-Large devices (large desktops, less than 1400px) */
+@media (max-width: 1399.98px) { 
+    /* No Need */
+ }
+
+/* // Large devices (desktops, less than 1200px) */
+@media (max-width: 1199.98px) {
+
+    /* Get The App Now: */
+    .app_store_btn a, .google_play_btn a 
+    {
+        width: 213px;
+        padding: 0 10px;
+    }
+    .app_store_btn a .icon, .google_play_btn a .icon 
+    {
+        margin-right: 5px;
+    }
+    /* #ABOUT THIS APP */
+    .card_row 
+    {
+        justify-content: space-around;
+    }
+      /* #Accessibility */
+      #accessibility .card 
+    {
+        max-width: 245px;
+        margin-bottom: 20px;
+    }
+      .phone_mockup_box 
+    {
+        padding-top: 150px;
+    }
+    /* #FEATURES */
+    .features_card_row .card 
+    {
+        max-width: 245px;
+        padding: 10px;
+    }
+    .features_card_row .card span 
+    {
+        right: -135px;
+    }
+    .features_mobile_mockup 
+    {
+        margin-top: 120px;
+    }
+
+    /* OUR LATEST ACTIVITY */
+    .card_container 
+    {
+      justify-content: space-around;
+      gap: 60px;
+    }
+
+    /* Statistic */
+    .statistic_container 
+    {
+        justify-content: space-around;
+        gap: 60px;
+    }
+    .app_downloads, .happy_clients, 
+    .active_users, .total_reviews 
+    {
+      width: 185px;
+      height: 190px;
+      padding: 10px;
+      gap: 2px;
+
+    }
+    .counter, .statistic_container strong 
+    {
+        font-size: 56px;
+    }
+ }
+
+ /* // Medium devices (tablets, less than 992px) */
+@media (max-width: 991.98px) { 
+    /* #MAIN_MENU */
+    .main_menu 
+    {
+        padding: 10px;
+    }
+    /* Banner */
+    .banner_content h1 
+    {
+        max-width: 530px;
+    }
+    .banner_model
+    {
+        justify-content: center;
+        padding-top: 35px;
+    }
+
+    /* # Get The App Now: */
+    .image_box
+    {
+      margin: 0 auto;
+      padding-top: 35px;
+    }
+
+    /* #ABOUT THIS APP */
+    .card_row .card 
+    {
+        max-width: 300px;
+    }
+    /* #Accessibility */
+    .phone_mockup_box 
+    {
+        display: flex;
+        justify-content: center;
+        padding: 20px 0;
+    }
+    /* #FEATURES */
+    .features_mobile_mockup 
+    {
+      margin-top: 0px;
+      margin-bottom: 20px;
+      display: flex;
+      justify-content: center;
+    }
+    .features_card_row .card 
+    {
+        max-width: 300px;
+    }
+    .features_card_row .card span 
+    {
+        right: -190px;
+    }
+        /* OUR PRICING PLANS */
+    .pricing_container 
+    {
+        justify-content: center;
+        gap: 50px;
+    }
+    /* OUR LATEST ACTIVITY */
+    .card_container .card 
+    {
+        width: 310px;
+    }
+
+    /* Subscribe For New Features */
+    .subscribe_now_container .form_area 
+    {
+        max-width: 500px;
+    }
+    .subscribe_now_container .form_area .your_email 
+    {
+        max-width: 350px;
+    }
+    .subscribe_now_container .form_area .submit_btn 
+    {
+        width: 200px;
+        padding: 15px;
+    }
+    /* GET IN TOUCH */
+    #get_in_touch 
+    {
+        padding: 60px 0 0;
+    }
+    .contact_container
+    {
+        margin: 0 auto;
+        margin-bottom: 30px;
+    }
+    /* Footer */
+    #footer
+    {
+        height: 100%;
+        padding-top: 310px;
+    }
+    .brand_about, 
+    .useful_links,
+    .contact_us
+    {
+        margin-bottom: 30px;
+    }
+ }
+
+ /* // Small devices (landscape phones, less than 768px) */
+@media (max-width: 767.98px) { 
+    /* #ABOUT THIS APP */
+    .card_row .card 
+    {
+        max-width: 350px;
+    }
+     /* #Accessibility */
+    #accessibility .card 
+    {
+        max-width: 300px;
+    }
+
+    /* OUR PRICING PLANS */
+    .pricing_container 
+    {
+        flex-direction: column;
+        align-items: center;
+        gap: 80px;
+    }
+
+     /* Statistic */
+    .app_downloads, .happy_clients, 
+    .active_users, .total_reviews 
+    {
+        padding: 10px;
+        width: 220px;
+    }
+    /* Subscribe For New Features */
+    .subscribe_now_container .form_area 
+    {
+        max-width: 400px;
+    }
+    .subscribe_now_container .form_area .your_email 
+    {
+        max-width: 200px;
+    }
+    .subscribe_now_container .form_area .submit_btn 
+    {
+        width: 150px;
+        padding: 10px;
+    }
+    /* Footer */
+    #footer 
+    {
+        padding-top: 330px;
+    }
+}
+
+/* X-Small devices (portrait phones, less than 576px) */
+@media (max-width: 575.98px) { 
+    /* #Banner */
+    .banner_content h1 
+    {
+        font-size: 27px;
+    }
+
+    /* All Header */
+    h2
+    {
+        font-size: 24px;
+    }
+    h3
+    {
+        font-size: 18px;
+    }
+
+    /* Subscribe For New Features */
+    .subscribe_now_container .form_area .your_email 
+    {
+        width: 100%;
+        margin-left: 15px;
+    }
+    .subscribe_now_container .form_area .submit_btn 
+    {
+        width: 145px;
+        margin-left: 2px;
+        padding: 5px;
+    }
+    /* Footer */
+    .copyright p 
+    {
+        line-height: 30px;
+        margin-top: 15px;
+    }
+}
