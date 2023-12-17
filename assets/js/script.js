@@ -87,26 +87,28 @@ priceToggler.onclick = () =>{
   }
 }
 
+
 // Statistic - Counter-Up2 v2.0.2 
+const counterUp = window.counterUp.default;
 
+const initializeCounter = (statisticElement) => {
+  const counterElement = statisticElement.querySelector('.counter');
+  const IO = new IntersectionObserver(entries => {
+    entries.forEach(entry => {
+      if (entry.isIntersecting && !statisticElement.classList.contains('is-visible')) {
+        counterUp(counterElement, {
+          duration: 2000,
+          delay: 16,
+        });
+        statisticElement.classList.add('is-visible');
+      }
+    });
+  }, { threshold: 1 });
 
-// Counter-Up2 v2.0.2 
-const counterUp = window.counterUp.default
+  IO.observe(statisticElement);
+};
 
-const callback = entries => {
-	entries.forEach( entry => {
-		const el = entry.target
-		if ( entry.isIntersecting && ! el.classList.contains( 'is-visible' ) ) {
-			counterUp( el, {
-				duration: 2000,
-				delay: 16,
-			} )
-			el.classList.add( 'is-visible' )
-		}
-	} )
-}
-
-const IO = new IntersectionObserver( callback, { threshold: 1 } )
-
-const el = document.querySelector( '.counter' )
-IO.observe( el )
+// Call the initializeCounter function for each statistic
+document.querySelectorAll('.statistic_container > div').forEach(statisticElement => {
+  initializeCounter(statisticElement);
+});
